@@ -8,7 +8,7 @@
 
     const scramjet = new ScramjetController({ 
       files: { 
-        wasm: "https://cdn.jsdelivr.net/gh/soap-phia/tinyjet@latest/tinyjet/scramjet.wasm.wasm", 
+        wasm: "https://cdn.jsdelivr.net/gh/soap-phia/tinyjet@latest/tinyjet/wasm.wasm", 
         all: "https://cdn.jsdelivr.net/gh/soap-phia/tinyjet@latest/tinyjet/scramjet.all.js", 
         sync: "https://cdn.jsdelivr.net/gh/soap-phia/tinyjet@latest/tinyjet/scramjet.sync.js" 
       } 
@@ -16,12 +16,12 @@
 
     try {
       scramjet.init();
-      navigator.serviceWorker.register("https://cdn.jsdelivr.net/gh/soap-phia/tinyjet@latest/sw.js");
+      navigator.serviceWorker.register("/sw.js");
     } catch (e) { 
       console.error("scramjet failed to initialize;", e); 
     }
 
-    const connection = new BareMux.BareMuxConnection("https://cdn.jsdelivr.net/gh/soap-phia/tinyjet@latest/bareworker.js");
+    const connection = new BareMux.BareMuxConnection("/bareworker.js");
 
     const wispUrl = "wss://gointospace.app/wisp/";
 
