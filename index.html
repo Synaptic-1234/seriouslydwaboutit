@@ -41,16 +41,16 @@
   </div>
   <iframe id="iframe" width="100%"></iframe>
 
-  <script src="cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/scramjet.all.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/scramjet.all.js" defer></script>
   <script type="module" defer>
-    import * as BareMux from "cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/index.mjs";
+    import * as BareMux from "https://cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/index.mjs";
 
     const { ScramjetController } = $scramjetLoadController();
     const scramjet = new ScramjetController({ 
       files: { 
-        wasm: "cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/wasm.wasm", 
-        all: "cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/scramjet.all.js", 
-        sync: "cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/scramjet.sync.js" 
+        wasm: "https://cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/wasm.wasm", 
+        all: "https://cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/scramjet.all.js", 
+        sync: "https://cdn.jsdelivr.net/gh/AerialiteLabs/tinyjet-frontend@latest/tinyjet/scramjet.sync.js" 
       } 
     });
 
