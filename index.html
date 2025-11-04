@@ -56,7 +56,6 @@
 
     try {
       scramjet.init();
-      const sw = `data:application/javascript;base64,aW1wb3J0U2NyaXB0cygiaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3NvYXAtcGhpYS90aW55amV0QGxhdGVzdC90aW55amV0L3NjcmFtamV0LmFsbC5qcyIpOwpjb25zdCB7IFNjcmFtamV0U2VydmljZVdvcmtlciB9ID0gJHNjcmFtamV0TG9hZFdvcmtlcigpOwpjb25zdCBzY3JhbWpldCA9IG5ldyBTY3JhbWpldFNlcnZpY2VXb3JrZXIoKQphc3luYyBmdW5jdGlvbiBoYW5kbGVSZXF1ZXN0KGV2ZW50KSB7CiAgYXdhaXQgc2NyYW1qZXQubG9hZENvbmZpZygpCiAgaWYgKHNjcmFtamV0LnJvdXRlKGV2ZW50KSkge3JldHVybiBhd2FpdCBzY3JhbWpldC5mZXRjaChldmVudCl9CiAgcmV0dXJuIGF3YWl0IGZldGNoKGV2ZW50LnJlcXVlc3QpCn0Kc2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIChldmVudCkgPT4ge2V2ZW50LnJlc3BvbmRXaXRoKGhhbmRsZVJlcXVlc3QoZXZlbnQpKX0p`;
       navigator.serviceWorker.register("./sw.js");
     } catch (e) { console.error("scramjet failed to initialize;", e); }
 
