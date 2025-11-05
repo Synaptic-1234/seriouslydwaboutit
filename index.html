@@ -274,11 +274,7 @@
     }
 
     function applyTabCloak(title, iconUrl) {
-      if (title) {
-        document.title = title;
-      } else {
-        document.title = originalTitle;
-      }
+      if (title) document.title = title;
       if (iconUrl) applyFavicon(iconUrl);
     }
 
@@ -294,6 +290,8 @@
         applyTabCloak(savedTitle, savedIcon);
         tabCloakInput.value = savedTitle || '';
         tabCloakIconInput.value = savedIcon || '';
+      } else {
+        document.title = originalTitle;
       }
     }
 
